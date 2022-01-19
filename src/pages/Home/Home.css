@@ -1,0 +1,43 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.home-headerLeft, .home-headerRight{
+    display: flex;
+    align-items: center;
+}
+
+.home-headerLeft p{
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.home-headerRight p{
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.app-icon, .avatar{
+    margin-left: 20px;
+}
+
+.home-body{
+    flex: 1;
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+}
+
+.home-body img{
+    object-fit: contain;
+    height: 200px;
+}

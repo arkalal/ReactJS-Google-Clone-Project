@@ -1,9 +1,11 @@
 import React from 'react'
+import './App.css'
+import Home from './pages/Home/Home'
 
 const App = () => {
     return (
         <div>
-            <h2>GOOGLE Clone!!!</h2>
+            <Home></Home>
         </div>
     )
 }
