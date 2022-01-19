@@ -47,3 +47,54 @@
     margin-top: 0;
     width: 700px;
 }
+
+
+/* Search Page Result Styling starts here */
+
+.searchPage-resultCount{
+    color: #70757a;
+    font-size: 17px;
+}
+
+.searchPage-result{
+    margin: 40px 0;
+}
+
+.searchPage-result img{
+    object-fit: contain;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.searchPage-resultLink{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+.searchPage-resultTitle{
+    text-decoration: none;
+}
+
+.searchPage-resultTitle:hover{
+    text-decoration: underline;
+}
+
+.searchPage-resultTitle h2{
+    font-weight: 500;
+}
+
+.searchPage-resultDescription{
+    margin-top: 10px;
+}
+
+.searchPage-results{
+    max-width: 650px;
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-bottom: 100px;
+}
+/* Search Page Result Styling ends here */

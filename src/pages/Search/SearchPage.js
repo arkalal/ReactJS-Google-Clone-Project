@@ -38,6 +38,25 @@ const SearchPage = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="searchPage-results">
+                <p className="searchPage-resultCount">
+                    About 8,880,000 results (0.57) for camel coder
+                </p>
+
+                <div className="searchPage-result">
+                    <a href="" className='searchPage-resultLink'>
+                        <img src="https://i1.sndcdn.com/avatars-000297590619-74sb08-t240x240.jpg" alt="" />
+                        github.com
+                    </a>
+
+                    <a href="" className='searchPage-resultTitle'>
+                        <h2>Just a test title</h2>
+                    </a>
+
+                    <p className='searchPage-resultDescription'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, deleniti.</p>
+                </div>
+            </div>
         </div>
     )
 }
