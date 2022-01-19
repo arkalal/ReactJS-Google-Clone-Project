@@ -7,7 +7,7 @@ const Search = ({ hidebuttons, ExtraIcon, Iconsearch, Style, SearchBorder }) => 
         <form action="" className='search'>
 
             <div className="search-input">
-                {Iconsearch && <Iconsearch></Iconsearch>}
+                {Iconsearch && <Iconsearch className='searchIcon-home'></Iconsearch>}
                 <input type="text" />
                 <div className={SearchBorder}>
                     <MicIcon className={Style} ></MicIcon>

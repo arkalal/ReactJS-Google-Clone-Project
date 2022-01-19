@@ -31,7 +31,7 @@
     border: none;
     border-radius: 5px;
     text-align: center;
-    color: black;
+    color: rgb(78, 78, 78);
     font-size: 15px;
     margin: 5px;
     padding: 10px 15px;
@@ -61,4 +61,8 @@
 .search-border{
     border-left: 1px solid lightgray;
     padding-left: 15px;
+}
+
+.searchIcon-home{
+    color: gray;
 }

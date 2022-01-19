@@ -41,3 +41,8 @@
     object-fit: contain;
     height: 200px;
 }
+
+.home-body p{
+    color: rgb(58, 57, 57);
+    margin: 200px auto;
+}

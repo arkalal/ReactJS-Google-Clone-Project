@@ -29,8 +29,10 @@ const Home = () => {
                 <img src="https://www.google.co.in/logos/doodles/2022/get-vaccinated-wear-a-mask-save-lives-january-18-copy-6753651837109684-law.gif" alt="" />
 
                 <div className="home-inputContainer">
-                    <Search Iconsearch={SearchIcon}></Search>
+                    <Search Iconsearch={SearchIcon} Style='search-mic'></Search>
                 </div>
+
+                <p>&copy; Developed By Arka Lal Chakravarty</p>
             </div>
         </div>
     )
