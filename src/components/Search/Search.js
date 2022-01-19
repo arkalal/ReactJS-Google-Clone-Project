@@ -1,15 +1,18 @@
 import React from 'react'
 import './Search.css'
-import SearchIcon from '@mui/icons-material/Search';
 import MicIcon from '@mui/icons-material/Mic';
 
-const Search = ({ hidebuttons }) => {
+const Search = ({ hidebuttons, ExtraIcon, Iconsearch, Style, SearchBorder }) => {
     return (
         <form action="" className='search'>
+
             <div className="search-input">
-                <SearchIcon className='searchicon'></SearchIcon>
+                {Iconsearch && <Iconsearch></Iconsearch>}
                 <input type="text" />
-                <MicIcon></MicIcon>
+                <div className={SearchBorder}>
+                    <MicIcon className={Style} ></MicIcon>
+                    {ExtraIcon && <ExtraIcon className='extra-icon'></ExtraIcon>}
+                </div>
             </div>
 
             {
@@ -18,6 +21,7 @@ const Search = ({ hidebuttons }) => {
                     <button className="searchBtn">I'm Feeling Lucky</button>
                 </div>)
             }
+
         </form>
     )
 }

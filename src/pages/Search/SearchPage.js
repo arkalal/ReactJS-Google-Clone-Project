@@ -19,21 +19,21 @@ const SearchPage = () => {
                 </Link>
 
                 <div className="searchPage-headerBody">
-                    <Search hidebuttons></Search>
+                    <Search hidebuttons ExtraIcon={SearchIcon} Style='search-mic' SearchBorder='search-border'></Search>
 
                     <div className="searchPage-options">
                         <div className="searchPage-optionsLeft">
                             <SearchOptions Icon={SearchIcon} link='/all' title='All'></SearchOptions>
-                            <SearchOptions Icon={SearchIcon} link='/all' title='All'></SearchOptions>
-                            <SearchOptions Icon={SearchIcon} link='/all' title='All'></SearchOptions>
-                            <SearchOptions Icon={SearchIcon} link='/all' title='All'></SearchOptions>
-                            <SearchOptions Icon={SearchIcon} link='/all' title='All'></SearchOptions>
-                            <SearchOptions Icon={SearchIcon} link='/all' title='All'></SearchOptions>
+                            <SearchOptions Icon={DescriptionIcon} link='/all' title='News'></SearchOptions>
+                            <SearchOptions Icon={ImageIcon} link='/all' title='Images'></SearchOptions>
+                            <SearchOptions Icon={LocalOfferIcon} link='/all' title='Shopping'></SearchOptions>
+                            <SearchOptions Icon={RoomRoundedIcon} link='/all' title='Maps'></SearchOptions>
+                            <SearchOptions Icon={MoreVertIcon} link='/all' title='More'></SearchOptions>
                         </div>
 
                         <div className="searchPage-optionsRight">
-                            <SearchOptions></SearchOptions>
-                            <SearchOptions></SearchOptions>
+                            <SearchOptions link='/settings' title='Settings'></SearchOptions>
+                            <SearchOptions link='/tools' title='Tools'></SearchOptions>
                         </div>
                     </div>
                 </div>
