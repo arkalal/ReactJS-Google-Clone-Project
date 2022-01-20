@@ -9,8 +9,15 @@ import ImageIcon from '@mui/icons-material/Image';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import RoomRoundedIcon from '@mui/icons-material/RoomRounded';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { useSelector } from 'react-redux'
+import useGoogleSearch from '../../useGoogleSearch'
 
 const SearchPage = () => {
+
+    const searchStore = useSelector((state) => state.search.value)
+    const { Data } = useGoogleSearch(searchStore.value)
+    console.log(Data)
+
     return (
         <div className='searchPage'>
             <div className="searchPage-header">
@@ -38,25 +45,38 @@ const SearchPage = () => {
                     </div>
                 </div>
             </div>
+            {
+                searchStore.value &&
 
-            <div className="searchPage-results">
-                <p className="searchPage-resultCount">
-                    About 8,880,000 results (0.57) for camel coder
-                </p>
+                (<div className="searchPage-results">
+                    <p className="searchPage-resultCount">
+                        About {Data?.searchInformation.formattedTotalResults} results ({Data?.searchInformation.formattedSearchTime}) for {searchStore.value}
+                    </p>
 
-                <div className="searchPage-result">
-                    <a href="" className='searchPage-resultLink'>
-                        <img src="https://i1.sndcdn.com/avatars-000297590619-74sb08-t240x240.jpg" alt="" />
-                        github.com
-                    </a>
+                    {
+                        Data?.items.map((item) => {
+                            return (
+                                (<div className="searchPage-result">
+                                    <a href={item.Link} className='searchPage-resultLink'>
+                                        {item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src && (
+                                            <img src={item.pagemap?.cse_image[0]?.src} alt="" />
+                                        )}
+                                        {item.displayLink}
+                                    </a>
 
-                    <a href="" className='searchPage-resultTitle'>
-                        <h2>Just a test title</h2>
-                    </a>
+                                    <a href={item.Link} className='searchPage-resultTitle'>
+                                        <h2> {item.title} </h2>
+                                    </a>
 
-                    <p className='searchPage-resultDescription'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, deleniti.</p>
-                </div>
-            </div>
+                                    <p className='searchPage-resultDescription'> {item.snippet} </p>
+                                </div>)
+                            )
+                        })
+                    }
+
+
+                </div>)
+            }
         </div>
     )
 }

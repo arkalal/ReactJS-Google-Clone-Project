@@ -73,6 +73,7 @@
     text-decoration: none;
     color: #000;
     margin-bottom: 6px;
+    cursor: pointer;
 }
 
 .searchPage-resultTitle{
@@ -85,6 +86,7 @@
 
 .searchPage-resultTitle h2{
     font-weight: 500;
+    cursor: pointer;
 }
 
 .searchPage-resultDescription{
