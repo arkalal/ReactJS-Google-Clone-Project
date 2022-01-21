@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ReactJS-Google-Clone-Project/static/css/main.bf717166.css",
+    "main.js": "/ReactJS-Google-Clone-Project/static/js/main.f86af012.js",
+    "index.html": "/ReactJS-Google-Clone-Project/index.html",
+    "main.bf717166.css.map": "/ReactJS-Google-Clone-Project/static/css/main.bf717166.css.map",
+    "main.f86af012.js.map": "/ReactJS-Google-Clone-Project/static/js/main.f86af012.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf717166.css",
+    "static/js/main.f86af012.js"
+  ]
+}
