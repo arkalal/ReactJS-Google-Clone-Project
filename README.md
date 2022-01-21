@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Google Clone Web App
+Developed By Arka Lal Chakravarty
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the ultimate Google App clone that has the real google search functionalities across the web.
 
-## Available Scripts
+# How to use the app?
 
-In the project directory, you can run:
+1. Open the Link of the app that is attched in the about section on the chrome browser. 
 
-### `npm start`
+2. The Home Section of the google clone will be opened. I have made the UI/UX So pitch perfect that it will be hard for the user to differentiate between the real google page and this clone!!😄🔥
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Now as you do in google, search of your desired keywords on the search box..and as you press enter or click the google search button, BOOM! all the results based on your keyword will POP Up! in the search result section.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. And Believe ME! all the searches that you do will function excatly the same as it does in the real google application. Isn't it great??
 
-### `npm test`
+5. Not only that, You will also be able to navigate through links of your choice in the search results..excatly how you do in the real google search. Though it is a demo showcase project but you can completely use it in real life.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# How it Works in the Background? How I have developed the Google Search System
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It works based on the Google Search API and Redux State Management Functionality..
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+At first, I focused developing the UI/UX with Material UI(Library) and Pure Vanilla CSS(In Which I am good at 😄💻) and tried my best to make it pitch perfect. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+After that, I have requested and API Key from the google developer console and fetched the data through the Search API. 
 
-### `npm run eject`
+Then I have created a custom - googleSearch.js React Hook on my own so that I can use the data that I have fetched from the google search API into my desired React Components.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Now with the help of Redux state Management I have created a seperate independent state of data store where I can collect all the values of the inputs that a user puts in the search box. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Finally, I have managed to connect the data store with the API so that as soon as a user puts a value in the search box the API can immediately recognize it and pull the data from the google search server as per the input value and show it in the search results.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+>> If you are still reading this.. and have read the entire readme then I hope you found interest in my project and also loved my work. 🤟 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+So if you are curious to get updated with all of my future projects then please go ahead and follow my Github Profile 🚀 give a star to this project that will help me a lot. Thank You!!
