@@ -57,14 +57,14 @@ const SearchPage = () => {
                         Data?.items.map((item) => {
                             return (
                                 (<div className="searchPage-result">
-                                    <a href={item.Link} className='searchPage-resultLink'>
+                                    <a href={item.link} className='searchPage-resultLink'>
                                         {item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src && (
                                             <img src={item.pagemap?.cse_image[0]?.src} alt="" />
                                         )}
-                                        {item.displayLink}
+                                        {item.displaylink}
                                     </a>
 
-                                    <a href={item.Link} className='searchPage-resultTitle'>
+                                    <a href={item.link} className='searchPage-resultTitle'>
                                         <h2> {item.title} </h2>
                                     </a>
 
